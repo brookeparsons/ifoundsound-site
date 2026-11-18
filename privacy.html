@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iFoundSound Privacy</title>
+<style>
+  :root { --bg:#fafaf7; --fg:#1d1d1b; --muted:#6b6b66; --accent:#d4452b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151514; --fg:#ecece8; --muted:#9a9a94; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 16px; }
+  h1 { margin-bottom:0; } p.date { color:var(--muted); margin-top:4px; }
+  h2 { font-size:1.15rem; margin-top:2em; } a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="date">Last updated November 17, 2026</p>
+
+  <p>iFoundSound is a private, non-commercial Discord bot used by a small group of invited people. This page explains what it stores and why.</p>
+
+  <h2>What we store</h2>
+  <ul>
+    <li><strong>Your Discord user ID</strong>, to check that you're allowed to use the bot and to keep your settings.</li>
+    <li><strong>The links you send</strong> and whether each download worked, in a request log used to fix bugs and improve the bot.</li>
+    <li><strong>Your save setting</strong> (original, WAV, or both).</li>
+    <li><strong>If you connect Google Drive:</strong> a Google sign-in token, stored encrypted, and the ID of the iFoundSound folder the bot created in your Drive.</li>
+  </ul>
+  <p>Downloaded audio is kept only while it's being processed and sent, and is deleted from the server within 30 minutes.</p>
+
+  <h2>Google Drive access</h2>
+  <p>iFoundSound asks only for the <code>drive.file</code> permission. That lets it create files and an iFoundSound folder in your Drive, and see only those files. It cannot see, read, change or delete anything else in your Drive. Google user data is used only to save your clips to your own Drive. It is never shared, sold, used for advertising, or used to train AI models.</p>
+  <p>iFoundSound's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Sharing</h2>
+  <p>We don't share or sell any data. The bot runs on a private server, and only the bot's operator can access it.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Run <code>/disconnect</code> in Discord to delete your stored Google token. You can also remove iFoundSound's access at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>. To have your settings and request history deleted, message the bot's operator in the iFoundSound Discord server.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top will be updated.</p>
+
+  <p><a href="index.html">← iFoundSound</a></p>
+</main>
+</body>
+</html>
